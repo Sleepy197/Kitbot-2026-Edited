@@ -33,13 +33,14 @@ public class CANFuelSubsystem extends SubsystemBase {
     feederRoller.configContinuousCurrentLimit(FEEDER_MOTOR_CURRENT_LIMIT);
     feederRoller.configPeakCurrentLimit(FEEDER_MOTOR_CURRENT_LIMIT);
     feederRoller.enableCurrentLimit(false);
+    feederRoller.setInverted(true);
 
     // Configure current limit for the launcher roller and invert it
     // so that positive values are used for both intaking and launching
     intakeLauncherRoller.configContinuousCurrentLimit(LAUNCHER_MOTOR_CURRENT_LIMIT);
     intakeLauncherRoller.configPeakCurrentLimit(LAUNCHER_MOTOR_CURRENT_LIMIT);
     intakeLauncherRoller.enableCurrentLimit(false);
-    intakeLauncherRoller.setInverted(false);
+    intakeLauncherRoller.setInverted(true);
 
     // Put default values for various fuel operations onto the dashboard
     // All commands using this subsystem pull values from the dashboard to allow

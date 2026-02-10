@@ -1,0 +1,4 @@
+right bumper is shoot
+left bumper is eject
+a is intake
+front is the intake

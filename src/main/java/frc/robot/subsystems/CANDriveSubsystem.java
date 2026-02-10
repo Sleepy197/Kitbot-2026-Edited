@@ -67,7 +67,7 @@ public class CANDriveSubsystem extends SubsystemBase {
 
     // Invert left side so that positive values drive both sides forward
     leftLeader.setInverted(false);
-    leftFollower.setInverted(false);
+    rightLeader.setInverted(true);
 
     // Set up differential drive class
     drive = new DifferentialDrive(leftLeader, rightLeader);
